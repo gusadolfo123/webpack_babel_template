@@ -8,6 +8,7 @@ photos.getPhotos().then((res) => console.log(res));
 function isValidJson(text) {
   try {
     JSON.parse(text);
+
     return true;
   } catch {
     return false;
@@ -15,3 +16,6 @@ function isValidJson(text) {
 }
 
 console.log(isValidJson("asdasd"));
+
+const asd = 8 / undefined;
+console.log(asd.length());
